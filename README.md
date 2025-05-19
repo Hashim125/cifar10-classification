@@ -1,30 +1,46 @@
-# Cifar-10 Classification
 
-This project classifies images from the cifar-10 dataset using neural networks and deep learning.
+# CIFAR-10 Image Classification with Streamlit
 
----
+This project is a Streamlit web application for classifying images from the CIFAR-10 dataset using a pre-trained deep learning model.
 
-## 📂 Project Structure
+## Features
 
-- **data/**: Cifar-10 images
-- **scripts/**: Python scripts
-  - `code.py`: Main script
-  - `my_utils.py`: Extra code used in code.py
-- **requirements.txt**: Required Python libraries
-- **README.md**: Project instructions
+- Upload an image to get a classification prediction.
+- Supports CIFAR-10 classes: airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck.
+- Real-time prediction with a user-friendly interface.
 
----
+## Setup
 
-## 🚀 How to Run
-
-1. **Clone the repository**:
+1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/cifar10-classification.git
-   cd player-sankey-chart
-2. **Install the required libraries**:
-    pip install -r requirements.txt
-3. **Navigate to the scripts folder**:
-    cd scripts
-4. **Run the app**
-    python code.py
+   git clone https://github.com/yourusername/cifar10-classification.git
+   cd cifar10-classification
+   ```
 
+2. Install required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the Streamlit app:
+   ```bash
+   streamlit run app.py
+   ```
+
+## Usage
+
+- Open the web application.
+- Upload an image from one of the CIFAR-10 classes.
+- The model will predict the class and display the result.
+
+## Model
+
+The model is trained using a custom architecture based on convolutional neural networks (CNNs) and residual blocks.
+
+## Troubleshooting
+
+If you encounter an error related to loading the model, ensure that the model file `cifar10_model.pth` is placed correctly in the `scripts` directory.
+
+## License
+
+This project is licensed under the MIT License.
