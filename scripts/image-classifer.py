@@ -106,6 +106,12 @@ def preprocess_image(image):
     return image
 
 # Streamlit App UI
+# Page configuration
+st.set_page_config(
+    page_title="CIFAR-10 Image Classifier,
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 st.title("🚀 CIFAR-10 Image Classification")
 st.markdown("""
     **Upload an image from one of the following classes:**  
