@@ -108,7 +108,7 @@ def preprocess_image(image):
 # Streamlit App UI
 # Page configuration
 st.set_page_config(
-    page_title="CIFAR-10 Image Classifier,
+    page_title="CIFAR-10 Image Classifier",
     layout="wide",
     initial_sidebar_state="expanded"
 )
